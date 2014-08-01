@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundación Emmanuel</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--    <script type="text/javascript" src="/static/min/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/dist/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/dist/css/main.css">
+    <script type="text/javascript" src="/static/dist/js/main.js"></script>
+    <script src="/static/dist/bootstrap/js/bootstrap.js"></script>
+    <script src="/static/dist/js/jquery.js"></script>
+-->
+<link rel="stylesheet" href="/static/dist/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/dist/css/main.css">
+
+    <script type="text/javascript" src="/static/dist/js/main.js"></script>
+
+
+
+    <script src="/static/dist/bootstrap/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="/static/min/jquery.min.js"></script>
+    <script src="/static/dist/bootstrap/js/jquery.js"></script>
+
+    {% block scripts %}
+
+    {% endblock %}
+
+</head>
+<body class="backgroundWeb">
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><strong>Fundación Emmanuel</strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="inicio" class="active"><a href="/"><strong>Inicio</strong></a></li>
+        <li id="nosotros"><a href="/nosotros/"><strong>Nosotros</strong></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Proyectos</strong><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/proyectos/ceti/"><strong>C.E.T.I.</strong></a></li>
+            <li><a href="/proyectos/etimendi/"><strong>ENTIMENDI</strong></a></li>
+            <li><a href="/proyectos/duenademi/"><strong>DUEÑA DE MI</strong></a></li>
+              <li><a href="/proyectos/jetsemani/"><strong>JETSEMANI</strong></a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>-->
+          </ul>
+        </li>
+        <li id="programas"><a href="/programas/"><strong>Programas</strong></a></li>
+        <li id="multimedia"><a href="/multimedia/"><strong>Multimedia</strong></a></li>
+        <li id="contacto"><a href="/contacto/"><strong>Contacto</strong></a></li>
+        <li id="archivos"><a href="/archivos/"><strong>Archivos</strong></a></li>
+
+
+
+      </ul>
+
+
+
+
+
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li id="voluntario"><a href="/voluntario/"><strong>VOLUNTARIO</strong></a></li>
+<!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lista Desplegable <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+ -->
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+    </div>
+ </nav>
+
+<br><br><br>
+
+            <section id="miSlide" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#miSlide" data-slide-to="0" class="active"></li>
+                    <li data-target="#miSlide" data-slide-to="1"></li>
+                    <li data-target="#miSlide" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active"><img src="/static/img/car1.png" class="adaptar"/>
+                    </div>
+                    <div class="item"><img src="/static/img/car2.png" class="adaptar"/></div>
+                    <div class="item"><img src="/static/img/car3.png" class="adaptar"/></div>
+                </div>
+            <a href="#miSlide" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#miSlide" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            </section><br>
+
+        {% block contenido %}
+
+        {% endblock%}
+
+    <script type="text/javascript" src="/static/min/jquery.js"></script>
+    <script type="text/javascript" src="/static/dist/bootstrap/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+     $("#miSlide").carousel();
+});
+
+    {% block js %}
+{% endblock js %}
+</script>
+
+
+<footer>
+    <div class="container">
+       <footer>
+        <hr class="featurette-divider">
+
+        <p style="text-align: center">Desarrollado por: <a href="http://www.twitter.com/bryanux" target="_blank">Bryan Molina</a> &copy; 2014 Todos los Derechos reservados</p>
+      </footer>
+        </div>
+</footer>
+
+<div id="flotante">
+        Sitio web en construcción.
+    </div>
+
+</body>
+
+
+
+
+</html>
+
+

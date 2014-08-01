@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<div class="container">
+    <hr/>
+    <h1 class=" well centrar">NOSOTROS</h1>
+    <hr/>
+
+    <div class="row">
+            <div class="col-md-8">
+                <div class="row well">
+                    <h3 class="well centrar">Misión</h3>
+                    {% for i in nosotros %}
+                    <div class="col-sm-4"><img class="img img-responsive" src="/media/{{i.imagenMision}}" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p>
+                                {{ i.mision}}
+                    </p>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+
+                <div class="row well">
+                    <h3 class="well centrar">Visión</h3>
+                    {% for i in nosotros %}
+                    <div class="col-sm-4"><img class="img img-responsive" src="/media/{{i.imagenVision}}" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p>
+                                {{ i.vision}}
+                    </p>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+                <div class="row well">
+                    <h3 class="well centrar">Objetivo</h3>
+                    {% for i in nosotros %}
+                    <div class="col-sm-4"><img class="img img-responsive" src="/media/{{i.imagenObjetivo}}" alt="Objetivo"/></div>
+                    <div class="col-sm-8">
+                    <p>
+                                {{ i.objetivo}}
+                    </p>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+
+            </div> <!-- fin del col md-8-->
+
+
+
+
+
+
+                <div class="col-md-4" style="text-align: center"> <!-- cambiar a md-->
+
+
+                        <a href="/voluntario/"><img class="img img-responsive" src="/static/img/voluntario.gif" alt=""/></a>
+                        <br>
+                        <a href="https://www.paypal.com/ec/cgi-bin/webscr?cmd=_flow&SESSION=wxlkaf_ZJZrRpjtkAQHr2irAX3CZta0Zp54sAMtzluUehLsTId4Cau6v51C&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639" target="_blank"><img class="img img-responsive" src="/static/img/donativo.gif" alt=""/></a>
+                        <br>
+                    <a class="twitter-timeline" href="https://twitter.com/FunEmmanuel" data-widget-id="449265748913819648">Tweets por @FunEmmanuel</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+                </div>
+
+
+       </div><!--fin del row-->
+
+
+
+</div>
+{% endblock %}
+
+{% block js %}
+
+$("#nosotros").addClass("active");
+$("#inicio").removeClass("active");
+{% endblock %}

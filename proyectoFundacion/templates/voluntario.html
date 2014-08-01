@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<div class="container">
+    <hr/>
+    <h1 class=" well centrar">VOLUNTARIO</h1>
+    <hr/>
+
+    <div class="row">
+            <div class="col-md-8">
+
+
+                <div class="row well">
+
+                    <h3 class="well centrar">Información General</h3>
+                    <div class="col-sm-4"><img class="img img-responsive" src="/static/img/correo.jpg" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p class="contactos">
+                        <form action="/nuevoVoluntario/" method="post" role="form">
+
+                          <div class="form-group">
+                            <label for="nombreId">Nombres</label>
+                            <input type="text" class="form-control" id="nombreId" name="txtNombre" placeholder="Ingrese sus nombres" required>
+                          </div>
+
+
+                          <div class="form-group">
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <label for="apellidoId">Apellio Paterno</label>
+                            <input type="text" class="form-control" id="apellidoPaternoId" name="txtApellidoPaterno" placeholder="Ingrese su apellido paterno" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="apellidoId">Apellido Materno</label>
+                            <input type="text" class="form-control" id="apellidoMaternoId" name="txtApellidoMaterno" placeholder="Ingrese sus apellido materno" required>
+                                </div>
+
+
+
+                             </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="correoId">Correo</label>
+                            <input type="email" class="form-control" id="correoId" name="txtCorreo" placeholder="Ingrese su correo" required>
+                          </div>
+
+
+                          <div class="form-group">
+                            <label for="telefonoId">Telefono</label>
+                            <input type="number" class="form-control" id="telefonoId" name="txtTelefono" placeholder="Ingrese su numero telefonico" required>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="mensajeId">Mensaje</label>
+                              <textarea name="txtContenidoMensaje" class="form-control " id="mensajeId" cols="30" rows="10" ></textarea>
+
+                          </div>
+
+
+
+
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+                    </p>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div> <!-- fin del col md-8-->
+
+
+
+
+
+
+                <div class="col-md-4" style="text-align: center"> <!-- cambiar a md-->
+
+                        <a href="/voluntario/"><img class="img img-responsive" src="/static/img/voluntario.gif" alt=""/></a>
+                        <br>
+                        <a href="https://www.paypal.com/ec/cgi-bin/webscr?cmd=_flow&SESSION=wxlkaf_ZJZrRpjtkAQHr2irAX3CZta0Zp54sAMtzluUehLsTId4Cau6v51C&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639" target="_blank"><img class="img img-responsive" src="/static/img/donativo.gif" alt=""/></a>
+                        <br>
+                    <a class="twitter-timeline" href="https://twitter.com/FunEmmanuel" data-widget-id="449265748913819648">Tweets por @FunEmmanuel</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+                </div>
+
+
+       </div><!--fin del row-->
+
+
+
+</div>
+{% endblock %}
+
+{% block js %}
+$("#inicio").removeClass("active");
+$("#voluntario").addClass("active");
+
+{% endblock %}

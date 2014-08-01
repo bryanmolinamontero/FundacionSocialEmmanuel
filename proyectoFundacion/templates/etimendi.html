@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundación Emmanuel</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/dist/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/dist/css/main.css">
+    <script type="text/javascript" src="/static/dist/js/main.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/static/min/jquery.min.js"></script>
+    <script src="/static/dist/js/jquery.js"></script>
+    <script src="/static/dist/bootstrap/js/bootstrap.js"></script>
+
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="/static/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/static/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/static/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/static/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/static/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/static/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="/static/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/static/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+
+</head>
+<body class="backgroundWeb">
+
+
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><strong>Fundación Emmanuel</strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="inicio"><a href="/"><strong>Inicio</strong></a></li>
+        <li id="nosotros"><a href="/nosotros/"><strong>Nosotros</strong></a></li>
+        <li id="proyectos" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Proyectos</strong><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/proyectos/ceti/"><strong>C.E.T.I.</strong></a></li>
+            <li><a href="/proyectos/etimendi/"><strong>ENTIMENDI</strong></a></li>
+            <li><a href="/proyectos/duenademi/"><strong>DUEÑA DE MI</strong></a></li>
+            <li><a href="/proyectos/jetsemani/"><strong>JETSEMANI</strong></a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>-->
+          </ul>
+        </li>
+          <li id="programas"><a href="/programas/"><strong>Programas</strong></a></li>
+          <li id="multimedia"><a href="/multimedia/"><strong>Multimedia</strong></a></li>
+          <li id="contacto"><a href="/contacto/"><strong>Contacto</strong></a></li>
+          <li id="archivos"><a href="/archivos/"><strong>Archivos</strong></a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li id="voluntario"><a href="/voluntario/"><strong>VOLUNTARIO</strong></a></li>
+<!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lista Desplegable <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+ -->
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+    </div>
+ </nav>
+
+<br><br><br>
+
+            <section id="miSlide" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#miSlide" data-slide-to="0" class="active"></li>
+                    <li data-target="#miSlide" data-slide-to="1"></li>
+                    <li data-target="#miSlide" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active"><img src="/static/img/car1.png" class="adaptar"/>
+                  <!--
+                    <div class="carousel-caption" alt="Imagen1">
+              <h3>Imagen 1</h3>
+              <p>Breve descripcion de la imagen
+              <button class="btn btn-primary">Boton</button></p>
+            </div>-->
+
+
+                    </div>
+                    <div class="item"><img src="/static/img/car2.png" class="adaptar"/></div>
+                    <div class="item"><img src="/static/img/car3.png" class="adaptar"/></div>
+                </div>
+            <a href="#miSlide" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#miSlide" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            </section><br>
+
+
+
+<div class="container">
+       <h1 class="well centrar"> ETIMENDI</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row well">
+                    <h3 class="well centrar">Erradicación de Trabajo Infantil y Mendicidad</h3>
+                    <div class="col-sm-4"><img class="img img-responsive" src="/static/img/etimendi.png" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p>Es la continuación del CETI, con la adición del componente de mendicidad. Se incrementó el cupo a 100 niños, niñas y adolescentes, así como el trabajo de campo, ya que se agregó la terapia familiar, charlas para padres y ayuda psicológica. Se ha iniciado el 1 de enero de 2014 y se culminará el 31 de diciembre de 2014.</p>
+                    </div>
+
+                </div>
+
+         <div style="text-align: center" id="work" class="row well">
+
+             <h3 class="well centrar">Galería Fotográfica</h3>
+
+             <a  class="fancybox" rel="group" href="/static/img/etimendi1.jpg"><img src="/static/img/etimendi-thumb1.jpg" alt="" /></a>
+              <a   class="fancybox" rel="group" href="/static/img/etimendi2.jpg"><img src="/static/img/etimendi-thumb2.jpg" alt="" /></a>&nbsp;
+              <a  class="fancybox" rel="group" href="/static/img/etimendi3.jpg"><img src="/static/img/etimendi-thumb3.jpg" alt="" /></a>&nbsp;
+             <div>
+                 <br/></div>
+
+              <a  class="fancybox" rel="group" href="/static/img/etimendi4.jpg"><img src="/static/img/etimendi-thumb4.jpg" alt="" /></a>&nbsp;
+              <a  class="fancybox" rel="group" href="/static/img/etimendi5.jpg"><img src="/static/img/etimendi-thumb5.jpg" alt="" /></a>&nbsp;
+              <a class="fancybox" rel="group" href="/static/img/etimendi6.jpg"><img src="/static/img/etimendi-thumb6.jpg" alt="" /></a>&nbsp;
+
+
+        </div>
+
+
+                <!--
+                <div class="row well">
+                    <h3 class="well centrar">Visión</h3>
+                    <div class="col-sm-4"><img class="img img-responsive" src="/static/img/vision.jpg" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p>Llegar hasta los más últimos rincones de nuestro país con ayuda social, guiados por el Espíritu y dotados de la fuerza que nos da nuestro Señor, mediante la generación de compromisos de ayuda social con personas naturales y jurídicas, abriendo delegaciones en las diferentes provincias del Ecuador donde más se precise la ayuda social. A más de esto, abrir Delegaciones de la Fundación en otros países del mundo y establecer convenios internacionales de cooperación interinstitucional para que se comprometan a colaborar para el desarrollo y engrandecimiento de nuestros pueblos.</p>
+                    </div>
+
+                </div>
+
+                <div class="row well">
+                    <h3 class="well centrar">Objetivo</h3>
+                    <div class="col-sm-4"><img class="img img-responsive" src="/static/img/objetivos.jpg" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p>La Fundación tiene como objetivo la investigación, promoción, difusión, respaldo, creación, establecimiento, desarrollo y aplicación de técnicas y proyectos orientados al bien común general de la sociedad, en sus aspectos sociales, educacionales, culturales, de salud pública y productivos; así como las actividades relacionadas con la filantropía y beneficencia pública.</p>
+                    </div>
+
+                </div>-->
+
+
+            </div> <!-- fin del col md-8-->
+
+
+
+
+
+
+                <div class="col-md-4" style="text-align: center"> <!-- cambiar a md-->
+
+
+                        <a href="/voluntario/"><img class="img img-responsive" src="/static/img/voluntario.gif" alt=""/></a>
+                        <br>
+                        <a href="https://www.paypal.com/ec/cgi-bin/webscr?cmd=_flow&SESSION=wxlkaf_ZJZrRpjtkAQHr2irAX3CZta0Zp54sAMtzluUehLsTId4Cau6v51C&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639" target="_blank"><img class="img img-responsive" src="/static/img/donativo.gif" alt=""/></a>
+                        <br>
+                    <a class="twitter-timeline" href="https://twitter.com/FunEmmanuel" data-widget-id="449265748913819648">Tweets por @FunEmmanuel</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+                </div>
+
+
+       </div><!--fin del row-->
+
+
+
+
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+
+        $("#nosotros").removeClass("active");
+        $("#inicio").removeClass("active");
+        $("#proyectos").addClass("active");
+	});
+</script>
+
+
+<div id="flotante">
+        Sitio web en construcción.
+    </div>
+
+</body>
+</html>

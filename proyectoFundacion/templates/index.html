@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+
+{% block contenido %}
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-8">
+            {% for i in inicio %}
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+
+					<h3 class="centrar">{{ i.titulo }}</h3>
+				</div>
+				<div class="row panel-body">
+					<center>
+					<div class="col-md-3">
+						<br>
+						<br>
+						<br>
+						<br>
+						<img class="img-circle img-responsive" src="/media/{{i.imagenInicio}}" alt=""/>
+					</div>
+					</center>
+					<div class="col-md-9">
+						<h3 class="well centrar">{{ i.subtitulo }}</h3>
+						<p style="text-align: justify">
+							<br>
+                            {{ i.descripcion }}
+							 <!--La Fundación Social Emmanuel está trabajando por los más necesitados, brindando apoyo afectivo, psicológico y de desarrollo de capacidades a niños, niñas y adolescentes en situación de trabajo infantil y mendicidad; a más de trabajar con adultos en situaciones de mendicidad. Además, se brinda acogimiento para adolescentes en situación de abuso sexual, riesgo de abuso o vulneración de derechos; los cuales se han podido ejecutar gracias a convenios suscritos con la Dirección Distrital del MIES de Machala, que es la entidad de donde provienen los recursos de los cuales nosotros como Fundación sin fines de lucro aportamos una contraparte.-->
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+            {% endfor %}
+			<h1 class="well centrar "> LABORES REALIZADAS</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img class="img img-responsive" src="/static/img/labores1.png" alt=""/>
+						<div class="caption">
+							<h3 class="well centrar">C.E.T.I.</h3>
+							<strong>
+							<p class="centrar1">
+								Centro de Erradicación de Trabajo Infantil
+							</p>
+							</strong>
+							<p style="text-align: justify">
+								Proyecto ejecutado desde el 1 de septiembre hasta el 31 de diciembre del 2013, con atención a 30 niños, niñas y adolescentes en edades de 7 a 16 años en situación o riesgo de trabajo infantil. Se lo ejecutó en el barrio Blanca García´y se les brindaba almuerzo de lunes a viernes, refrigerio, ayuda escolar y actividades extracurriculares.
+							</p>
+							<p class="centrar">
+								<a href="/proyectos/ceti/" class="btn btn-primary" role="button">Conoce Más</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img class="img img-responsive" src="/static/img/labores2.png" alt=""/>
+						<div class="caption">
+							<h3 class=" well centrar">ETIMENDI</h3>
+							<strong>
+							<p class="centrar1">
+								Erradicación de Trabajo Infantil y Mendicidad
+							</p>
+							</strong>
+							<p style="text-align: justify">
+								Es la continuación del CETI, con la adición del componente de mendicidad. Se incrementó el cupo a 100 niños, niñas y adolescentes, así como el trabajo de campo, ya que se agregó la terapia familiar, charlas para padres y ayuda psicológica. Se ha iniciado el 1 de enero de 2014 y se culminará el 31 de diciembre de 2014.
+							</p>
+							<p class="centrar">
+								<a href="/proyectos/etimendi/" class="btn btn-primary" role="button">Conoce Más</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img class="img img-responsive" src="/static/img/labores3.png" alt=""/>
+						<div class="caption">
+							<h3 class="well centrar">DUEÑA DE MÍ</h3>
+							<strong>
+							<p class="centrar1">
+								Defensa de abuso sexual
+							</p>
+							</strong>
+							<p style="text-align: justify">
+								Este es un proyecto de acogimiento con capacidad para 30 adolescentes que han sufrido abuso sexual o están en riesgo de éste. Se encuentran asiladas en una casa donde se les brinda alimentación, educación, terapia psicológica para superar el trauma, a más de la terapia para padres con las trabajadoras sociales para que se haga posible la re inserción de las jóvenes en el núcleo familiar.
+							</p>
+							<p class="centrar">
+								<a href="/proyectos/duenademi/" class="btn btn-primary" role="button">Conoce Más</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="thumbnail">
+						<img class="img img-responsive" src="/static/img/labores4.png" alt=""/>
+						<div class="caption">
+							<h3 class="well centrar">JETSEMANÍ:</h3>
+							<strong>
+							<p class="centrar1">
+								Huertos orgánicos Jetsemaní
+							</p>
+							</strong>
+							<p style="text-align: justify">
+								Este proyecto aspira la construcción de un huerto orgánico con la finalidad de satisfacer las necesidades de alimentos a los moradores del Blanca García. Se prevé capacitaciones a las familias del sector en el cultivo de huertos orgánicos en sus hogares con la finalidad de lograr un impacto positivo, tanto en la generación de alimentos sanos, como en el ahorro en la canasta familiar y los ingresos por la venta de los excedentes.
+							</p>
+							<p class="centrar">
+								<a href="/proyectos/jetsemani/" class="btn btn-primary" role="button">Conoce Más</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="text-align: center">
+			<!-- cambiar a md-->
+            <a href="/voluntario/"><img class="img img-responsive" src="/static/img/voluntario.gif" alt=""/></a>
+			<br>
+			<a href="https://www.paypal.com/ec/cgi-bin/webscr?cmd=_flow&SESSION=IE4meUHgwEHfeCFl3O89SpSp6roIXRQCTwu9Ya7GfimigVfz9Iqjh3Dku4e&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639" target="_blank"><img class="img img-responsive" src="/static/img/donativo.gif" alt=""/></a>
+			<br>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="centrar">Noticias</h3>
+				</div>
+
+                <div class="row panel-body">
+
+
+			    <section><!-- INICIO DE SECCION DE LAS NOTICIAS-->
+
+					<div class="col-md-12 ">
+
+						 <article>
+            <ul class="list-group">
+                {% for contact in contacts %}
+
+                    <table>
+                    <tr style="font-size: 110%; "><td colspan="2"><strong><u>{{ contact.titulo | upper }}</u></strong></td></tr>
+
+                    <tr><td><label class="label label-primary">Fecha</label></td><td style=" font-size: x-small">{{ contact.fecha }}</td></tr>
+                    <tr><td><label class="label label-primary"></label></td><td style="text-align: center"><img style="border-radius: 6px;" src="/media/{{contact.imagen}}" width="50%"></td></tr>
+                    <tr><td><label class="label label-primary">Contenido</label></td>
+                    <tr><td></td><td style="text-align: justify;">{{ contact.contenido | truncatewords:20 | safe}} &nbsp; <a href="/ver_noticia/{{ contact.id }}"><b>Leer mas...</b></a></td></tr>
+
+                    </table>
+
+                    <hr/>
+
+                    <br/>
+                {% empty %}
+                    <p>¡¡¡No hay noticias...¡¡¡</p>
+                {% endfor %}
+                <span class="step-links">
+                    {% if contacts.has_previous %}
+                    <a href="?page={{ contacts.previous_page_number }}">Anterior</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Pagina {{ contacts.number }} de {{ contacts.paginator.num_pages }}.
+                    </span>
+
+                    {% if contacts.has_next %}
+                    <a href="?page={{ contacts.next_page_number }}">Siguiente</a>
+                    {% endif %}
+                </span>
+                <!--<tr><td colspan="2" style="padding: 10px; text-align: center"><button class="button" onclick="print()" >Imprimir</button></td></tr>-->
+            </ul>
+        </article>
+					</div>
+
+                </section><!-- FIN DE SECCION DE LAS NOTICIAS-->
+
+
+
+
+				</div>
+			</div>
+
+
+
+
+
+		</div><!-- FIN DE LA COLUM MD4-->
+
+	</div>
+
+    </div>
+	<!-- div del container-->
+{% endblock %}
+{%block js %}
+{% endblock %}

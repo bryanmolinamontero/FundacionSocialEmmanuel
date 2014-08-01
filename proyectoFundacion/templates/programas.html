@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block contenido%}
+
+
+<div class="container">
+    <hr/>
+    <h1 class=" well centrar">PROGRAMAS</h1>
+    <hr/>
+
+    <div class="row">
+            <div class="col-md-8">
+
+                {% for i in programas %}
+
+
+                    <div class="row well">
+                    <h3 class="well centrar">{{ i.titulo }}</h3>
+                    <div class="col-sm-4"><img class="img img-responsive" src="/media/{{ i.imagen }}" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p>
+                        {{ i.descripcion | linebreaksbr}}
+                    </p>
+
+                        <center><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{{i.titulo | slugify}}">
+                        {{ i.boton | upper }}
+                        </button></center>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="{{i.titulo | slugify}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+
+                              <form action="/correoPrograma/" method="post">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h3 class="modal-title" id="myModalLabel">{{ i.titulo }}</h3>
+                                <h5>Brindanos la siguiente informacion para contactarnos contigo</h5>
+                              </div>
+                              <div class="modal-body">
+
+                                  <div class="form-group">
+                                     <label for="nombreId">Nombre</label>
+                                     <input type="text" class="form-control" id="nombreId" name="txtNombre" placeholder="Ingrese su nombre y apellido" required>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="telefonoId">Telefono</label>
+                                    <input type="number" class="form-control" id="telefonoId" name="txtTelefono" placeholder="Ingrese su telefono para contacto" required>
+                                  </div>
+
+                                  <input type="hidden" name="txtAsunto" value="{{ i.titulo }}">
+
+
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">ENVIAR</button>
+                              </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- fin del modal de abuelo-->
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+
+
+
+            </div> <!-- fin del col md-8-->
+
+
+
+
+
+
+                <div class="col-md-4" style="text-align: center"> <!-- cambiar a md-->
+
+
+
+                        <a href="/voluntario/"><img class="img img-responsive" src="/static/img/voluntario.gif" alt=""/></a>
+                        <br>
+                        <a href="https://www.paypal.com/ec/cgi-bin/webscr?cmd=_flow&SESSION=wxlkaf_ZJZrRpjtkAQHr2irAX3CZta0Zp54sAMtzluUehLsTId4Cau6v51C&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639" target="_blank"><img class="img img-responsive" src="/static/img/donativo.gif" alt=""/></a>
+                        <br>
+                    <a class="twitter-timeline" href="https://twitter.com/FunEmmanuel" data-widget-id="449265748913819648">Tweets por @FunEmmanuel</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+                </div>
+
+
+       </div><!--fin del row-->
+
+
+
+</div>
+
+{% endblock %}
+
+{% block js %}
+
+    $("#nosotros").removeClass("active");
+    $("#inicio").removeClass("active");
+    $("#proyectos").removeClass("active");
+    $("#programas").addClass("active");
+
+{% endblock %}
+

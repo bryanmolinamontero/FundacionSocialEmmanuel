@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundación Emmanuel</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/dist/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/dist/css/main.css">
+    <script type="text/javascript" src="/static/dist/js/main.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/static/min/jquery.min.js"></script>
+
+    <script src="/static/dist/bootstrap/js/bootstrap.js"></script>
+
+
+
+<!--    <script type="text/javascript" src="/static/dist/js/jquery.form.js"></script>-->
+    <script type="text/javascript" src="/static/dist/js/jquery.validate.js"></script>
+    <!--<script type="text/javascript" src="/static/dist/js/bbq.js"></script>-->
+    <script type="text/javascript" src="/static/dist/js/jquery-ui-1.8.5.custom.min.js"></script>
+    <script type="text/javascript" src="/static/dist/js/jquery.form.wizard.js"></script>
+
+<script type="text/javascript">
+			$(function(){
+				$("#demoForm").formwizard({
+				 	formPluginEnabled: true,
+				 	validationEnabled: true,
+				 	focusFirstInput : true
+
+				 }
+				);
+  		});
+    </script>
+
+
+</head>
+
+<body class="backgroundWeb">
+
+
+
+<div class="container">
+    <hr/>
+        <h1 class=" well centrar">SÉ UN VOLUNTARIO</h1>
+    <hr/>
+
+    <div class="row">
+            <div class="col-md-8">
+                <!--<div class="row well">
+                    <h3 class="well centrar">Formulario de voluntariado</h3>
+
+                    <form class="form-inline" action="">
+                        <div class="col-sm-12 form-group" >
+
+
+                            <div class="row"><label >Nombre:</label></col-md-3>&nbsp;</div>
+                            <div class="row">
+
+                            <col-md-4><input type="text"  class=" form-control"  placeholder="Nombres"></col-md-4>&nbsp;
+                            <col-md-4><input type="text" class=" form-control"  placeholder="Apellido Paterno"/></col-md-4>&nbsp;
+                            <col-md-4><input type="text" class=" form-control"  placeholder="Apellido Materno"/></col-md-4>&nbsp;
+
+                            </div>
+
+                            <br/>
+                            <div class="row"><label >Datos Generales:</label></col-md-3>&nbsp;</div>
+                            <div class="row">
+
+                            <col-md-3><input type="text"  class=" form-control" placeholder="Nacionalidad"></col-md-3>&nbsp;
+                            <col-md-3><input type="text" class=" form-control" placeholder="Cédula / Pasaporte"/></col-md-3>&nbsp;
+                            <col-md-3><input type="text" class=" form-control" placeholder="Fecha de Exp Pasaporte"/></col-md-3>&nbsp;
+
+                            <col-md-3><input type="text" placeholder="Fecha de Nacimiento" class="form-control" id="dob" /></col-md-3>
+
+                            </div>
+
+
+
+
+                            <br/>
+                            <div class="row"><label >Datos de contacto:</label></col-md-3>&nbsp;</div>
+                            <div class="row">
+
+                            <col-md-3><input type="text"  class=" form-control" placeholder="Ciudad"></col-md-3>&nbsp;
+                            <col-md-3><input type="text" class=" form-control" placeholder="Telefono"/></col-md-3>&nbsp;
+                            <col-md-3><input type="text" class=" form-control" placeholder="Celular"/></col-md-3>&nbsp;
+
+                            <col-md-3><input type="text" placeholder="Correo Electrónico" class="form-control"/></col-md-3>
+
+                            </div>
+
+
+                            <br/>
+                            <div class="row"><label >Dirección:</label></col-md-3>&nbsp;</div>
+                            <div class="row">
+                            <col-md-12><input type="text"   style="width: 98%;" class=" form-control" placeholder="Ingrese su dirección"></col-md-12>&nbsp
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                     </form>
+
+
+                </div>-->
+
+
+
+                <div class="row well">
+
+
+
+                    <form id="demoForm" method="post" action="json.html" class="bbq form-inline">
+
+
+
+                        <div class="col-sm-12 form-group" >
+
+
+				<div id="fieldWrapper">
+                    <div class="step" id="first">
+                                    <div class="col-md-6">
+
+                                                <span class="font_normal_07em_black">Informacion Basica</span><br />
+                                                <label for="firstname">Nombres</label><br />
+                                                <input class="input_field_12em required form-control" name="firstname" id="firstname" placeholder="Nombres"/><br />
+                                                <br/>
+                                                <input class="input_field_12em required form-control" name="firstsurname" id="firstsurname" placeholder="Apellido Paterno"/><br />
+                                                <br/>
+                                                <input class="input_field_12em required form-control" name="secondsurname" id="secondsurname" placeholder="Apellido Materno"/><br />
+                                                <br/>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                                <span class="font_normal_07em_black">Informacion Basica</span><br />
+                                                <label for="afirstname">Nombres</label><br />
+                                                <input class="input_field_12em required form-control" name="afirstname" id="afirstname" placeholder="Nombres"/><br />
+                                                <br/>
+                                                <input class="input_field_12em required form-control" name="afirstsurname" id="afirstsurname" placeholder="Apellido Paterno"/><br />
+                                                <br/>
+                                                <input class="input_field_12em required form-control" name="asecondsurname" id="asecondsurname" placeholder="Apellido Materno"/><br />
+                                                <br/>
+
+
+
+                                    </div>
+
+                     </div>
+
+				<div id="finland" class="step">
+					<span class="font_normal_07em_black">Step 2 - Personal information</span><br />
+					<label for="day_fi">Social Security Number</label><br />
+					<input class="input_field_25em form-control" name="day" id="day_fi" value="DD" />
+					<input class="input_field_25em form-control" name="month" id="month_fi" value="MM" />
+					<input class="input_field_3em" name="year" id="year_fi" value="YYYY" /> -
+					<input class="input_field_3em" name="lastFour" id="lastFour_fi" value="XXXX" /><br />
+					<label for="countryPrefix_fi">Phone number</label><br />
+					<input class="input_field_35em" name="countryPrefix" id="countryPrefix_fi" value="+358" /> -
+					<input class="input_field_3em" name="areaCode" id="areaCode_fi" /> -
+					<input class="input_field_12em" name="phoneNumber" id="phoneNumber_fi" /><br />
+					<label for="email">*Email</label><br />
+					<input class="input_field_12em email required" name="myemail" id="myemail" /><br />
+				</div>
+				<div id="confirmation" class="step">
+					<span class="font_normal_07em_black">Last step - Username</span><br />
+					<label for="username">User name</label><br />
+					<input class="input_field_12em" name="username" id="username" /><br />
+					<label for="password">Password</label><br />
+					<input class="input_field_12em" name="password" id="password" type="password" /><br />
+					<label for="retypePassword">Retype password</label><br />
+					<input class="input_field_12em" name="retypePassword" id="retypePassword" type="password" /><br />
+				</div>
+				</div>
+				<div id="demoNavigation">
+					<input class="navigation_button" id="back" value="Back" type="reset" />
+					<input class="navigation_button" id="next" value="Next" type="submit" />
+
+
+                    </div>
+                            </div>
+			</form>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+<!--                    <form id="SignupForm" class="form-inline" action="">
+    <fieldset>
+        <legend>Información General</legend>
+
+                        <div class="col-sm-12 form-group" >
+                         <div class="row">
+
+                            <col-md-4><input type="text"  class=" form-control required"  placeholder="Nombres" required></col-md-4>&nbsp;
+                            <col-md-4><input type="text" class=" form-control"  placeholder="Apellido Paterno" required></col-md-4>&nbsp;
+                            <col-md-4><input type="text" class=" form-control"  placeholder="Apellido Materno" required></col-md-4>&nbsp;
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+    </fieldset>
+    <fieldset>
+        <legend>PASO2</legend>
+        <input type="text" placeholder="segundo paso" />
+
+    </fieldset>
+    <fieldset>
+        <legend>PASO3</legend>
+        <input type="text" placeholder="tercer paso"/>
+
+
+    </fieldset>
+
+                        <input type="submit"/>
+</form>-->
+
+
+
+
+
+
+
+                <div class="row well">
+                    <a name="contactame"></a>
+                    <h3 class="well centrar">Correo</h3>
+                    <div class="col-sm-4"><img class="img img-responsive" src="/static/img/correo.jpg" alt=""/></div>
+                    <div class="col-sm-8">
+                    <p class="contactos">
+                        <form action="/enviarCorreo/" method="post" role="form">
+
+                          <div class="form-group">
+                            <label for="nombreId">Nombre</label>
+                            <input type="text" class="form-control" id="nombreId" name="txtNombre" placeholder="Ingrese su nombre" required>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="correoId">Correo</label>
+                            <input type="email" class="form-control" id="correoId" name="txtCorreo" placeholder="Ingrese su correo" required>
+                          </div>
+
+
+                          <div class="form-group">
+                            <label for="asuntoId">Asunto</label>
+                            <input type="text" class="form-control" id="asuntoId" name="txtAsunto" placeholder="Ingrese el asunto" required>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="mensajeId">Mensaje</label>
+                              <textarea name="txtContenidoMensaje" class="form-control " id="mensajeId" cols="30" rows="10" ></textarea>
+
+                          </div>
+
+
+
+
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+
+                    </p>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div> <!-- fin del col md-8-->
+
+
+
+
+
+
+                <div class="col-md-4" style="text-align: center"> <!-- cambiar a md-->
+
+
+
+
+                            <img class="img img-responsive" src="/static/img/voluntario.gif" alt=""/>
+
+                    <br>
+
+                        <img class="img img-responsive" src="/static/img/donativo.gif" alt=""/>
+
+                    <br>
+                    <a class="twitter-timeline" href="https://twitter.com/FunEmmanuel" data-widget-id="449265748913819648">Tweets por @FunEmmanuel</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+                </div>
+
+
+       </div><!--fin del row-->
+
+
+
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+
+        $("#nosotros").removeClass("active");
+        $("#inicio").removeClass("active");
+        $("#proyectos").addClass("active");
+
+
+        $("#inicio").removeClass("active");
+$("#voluntario").addClass("active");
+
+      var textbox = document.getElementById('dob')
+        textbox.onfocus = function (event) {
+            this.type = 'date';
+            this.focus();
+    }
+
+	});
+</script>
+
+
+<div id="flotante">
+        Sitio web en construcción.
+    </div>
+
+</body>
+</html>
